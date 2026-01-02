@@ -1,146 +1,88 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Bodega Built Merch</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Shop Merch • Bodega Built</title>
 
   <style>
     body {
       margin: 0;
-      background: url("images/front.jpg") center / cover no-repeat fixed;
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+      background: #0b0b0b;
       color: #fff;
+      text-align: center;
     }
 
-    .overlay {
+    .wrap {
       min-height: 100vh;
-      background: rgba(0,0,0,0.75);
-      padding: 40px 20px;
-    }
-
-    header {
-      text-align: center;
-      margin-bottom: 40px;
-    }
-
-    header img {
-      max-width: 280px;
-      width: 80%;
-    }
-
-    h1 {
-      font-size: 28px;
-      margin: 20px 0 10px;
-      letter-spacing: 1px;
-    }
-
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 24px;
-      max-width: 1100px;
-      margin: 0 auto;
-    }
-
-    .item {
-      background: rgba(0,0,0,0.6);
-      border: 1px solid rgba(255,255,255,0.15);
-      border-radius: 12px;
-      padding: 16px;
-      text-align: center;
+      padding: 40px 16px;
+      background: url("images/front.jpg") center / cover no-repeat;
       position: relative;
     }
 
-    .item img {
-      width: 100%;
-      border-radius: 8px;
-      margin-bottom: 12px;
-    }
-
-    .label {
-      font-size: 16px;
-      margin-bottom: 6px;
-    }
-
-    .soon {
-      font-size: 12px;
-      letter-spacing: 1px;
-      opacity: 0.7;
-    }
-
-    .badge {
+    .overlay {
       position: absolute;
-      top: 12px;
-      right: 12px;
-      background: rgba(0,0,0,0.8);
-      border: 1px solid rgba(255,255,255,0.3);
-      padding: 4px 10px;
-      border-radius: 999px;
-      font-size: 11px;
-      letter-spacing: 1px;
+      inset: 0;
+      background: rgba(0,0,0,0.7);
     }
 
-    footer {
-      text-align: center;
-      margin-top: 50px;
-      font-size: 12px;
-      opacity: 0.6;
+    .content {
+      position: relative;
+      z-index: 2;
+      max-width: 900px;
+      margin: auto;
     }
+
+    img.logo {
+      width: 220px;
+      margin-bottom: 20px;
+    }
+
+    img.preview {
+      width: 100%;
+      max-width: 700px;
+      border-radius: 16px;
+      border: 1px solid rgba(255,255,255,0.25);
+      box-shadow: 0 20px 40px rgba(0,0,0,0.6);
+    }
+
+    .pill {
+      margin-top: 14px;
+      display: inline-block;
+      padding: 8px 14px;
+      border-radius: 999px;
+      border: 1px solid rgba(255,255,255,0.3);
+      background: rgba(0,0,0,0.6);
+      font-size: 14px;
+    }
+
+    a {
+      color: #fff;
+      text-decoration: none;
+      opacity: 0.85;
+    }
+    a:hover { opacity: 1; }
   </style>
 </head>
 
 <body>
-  <div class="overlay">
+  <div class="wrap">
+    <div class="overlay"></div>
 
-    <header>
-      <img src="images/logo.png" alt="Bodega Built logo">
-      <h1>Merch</h1>
-    </header>
+    <div class="content">
+      <a href="index.html">← Back</a>
+      <br><br>
 
-    <section class="grid">
+      <img class="logo" src="images/logo.png" alt="Bodega Built logo">
 
-      <div class="item">
-        <span class="badge">COMING SOON</span>
-        <img src="images/merch/tee-black.png" alt="Black Tee">
-        <div class="label">T-Shirt (Black)</div>
-        <div class="soon">Bodega Built</div>
-      </div>
+      <h1>Shop Merch</h1>
+      <p>First drop coming soon.</p>
 
-      <div class="item">
-        <span class="badge">COMING SOON</span>
-        <img src="images/merch/hoodie-black.png" alt="Hoodie">
-        <div class="label">Heavyweight Hoodie</div>
-        <div class="soon">Street Fit</div>
-      </div>
+      <img class="preview" src="images/merch-preview.jpg" alt="Bodega Built merch preview">
 
-      <div class="item">
-        <span class="badge">COMING SOON</span>
-        <img src="images/merch/beanie.png" alt="Beanie">
-        <div class="label">Beanie</div>
-        <div class="soon">Cold Weather Essential</div>
-      </div>
-
-      <div class="item">
-        <span class="badge">COMING SOON</span>
-        <img src="images/merch/sticker.png" alt="Sticker">
-        <div class="label">Sticker Pack</div>
-        <div class="soon">Deli Culture</div>
-      </div>
-
-      <div class="item">
-        <span class="badge">COMING SOON</span>
-        <img src="images/merch/mug.png" alt="Mug">
-        <div class="label">Coffee Mug</div>
-        <div class="soon">Bodega Built</div>
-      </div>
-
-    </section>
-
-    <footer>
-      © Bodega Built Sandwicheria
-    </footer>
-
+      <div class="pill">Coming Soon</div>
+    </div>
   </div>
 </body>
 </html>
